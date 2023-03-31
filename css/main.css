@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-color: hsl(225, 100%, 94%);
+}
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main img {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  margin-bottom: -5px;
+}
+.content {
+  width: 450px;
+  padding: 45px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.content .text {
+  text-align: center;
+}
+.content .text h1 {
+  margin-bottom: 20px;
+  color: hsl(223, 47%, 23%);
+}
+.content .text p {
+  line-height: 1.6;
+  color: hsl(224, 23%, 55%);
+}
+main .plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 25px 0;
+  border-radius: 15px;
+  background-color: hsl(225, 100%, 98%);
+}
+main .plan figure {
+  display: flex;
+}
+main .plan figure img {
+  margin-right: 20px;
+}
+main .plan figcaption p:first-child {
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: hsl(223, 47%, 23%);
+}
+main .plan figcaption p:nth-child(2) {
+  color: hsl(224, 23%, 55%);
+}
+main .plan a {
+  color: hsl(245, 75%, 52%);
+  font-weight: 600;
+  transition: 0.3s;
+}
+main .plan a:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+main .content .payment {
+  background-color:  hsl(245, 75%, 52%);
+  padding: 10px;
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 30%);
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+main .content .payment:hover {
+  opacity: 0.8;
+}
+main .content .cancel {
+  cursor: pointer;
+  color: hsl(224, 23%, 55%);
+  text-align: center;
+  font-size: 14px;
+  transition: 0.3s;
+  font-weight: 700;
+}
+main .content .cancel:hover {
+  font-weight: 700;
+  color: hsl(223, 47%, 23%);
+}
